@@ -1,0 +1,432 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1372px;
+    width: calc(100% - 64px);
+    margin: auto;
+}
+
+.section {
+    margin-top: 120px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav{
+    display: flex;
+    gap: 70px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.header-nav a:hover {
+    color: #ff4d30;
+    text-decoration: underline;
+}   
+
+.hero {
+    margin-top: 70px;
+}
+
+.hero-inner-mainText {
+    width: 800px;
+    font-size: 72px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.hero-inner-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.hero-inner-content-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-inner-content-first p {
+    width: 445px;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.hero-inner-content-first img{
+    width: 330px;
+}
+
+.hero-inner-content-second img {
+    width: 680px;
+}
+
+@media (max-width: 500px) {
+    .header-nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .header-logo a img {
+        width: 100%;
+    }
+    .header-inner {
+        margin-top: 8px;
+    }
+    .hero-inner-mainText {
+        font-size: 32px;
+    }
+    .hero-inner-content-first p {
+        width: 100%;
+        font-size: 16px;
+    }
+    .hero-inner-content-first img {
+        display: none;
+    }
+    .hero-inner-content {
+        flex-direction: column;
+    }
+    .hero-inner-content-second img {
+        width: 100%;
+    }
+}
+
+/* ===== Общие ===== */
+.section-title {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+
+/* ===== О нас ===== */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.about-text {
+    width: 600px;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.about-stats {
+    display: flex;
+    gap: 48px;
+}
+
+.about-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about-stat-number {
+    font-size: 56px;
+    font-weight: 600;
+    color: #ff4d30;
+}
+
+.about-stat-text {
+    font-size: 16px;
+}
+
+/* ===== Проекты ===== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.project-card img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    background: #eee;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    font-size: 16px;
+    line-height: 140%;
+    color: #555;
+}
+
+/* ===== Материалы ===== */
+.materials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.material-card {
+    padding: 32px 24px;
+    border: 1px solid #ddd;
+    transition: border-color 0.2s;
+}
+
+.material-card:hover {
+    border-color: #ff4d30;
+}
+
+.material-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.material-card p {
+    font-size: 16px;
+    line-height: 140%;
+    color: #555;
+}
+
+/* ===== Отзывы ===== */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.review-card {
+    padding: 32px;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.review-card p {
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.review-card cite {
+    font-style: normal;
+    font-weight: 600;
+    color: #ff4d30;
+}
+
+/* ===== Футер ===== */
+.footer {
+    background: #111;
+    color: #fff;
+    padding: 80px 0 24px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-cta h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.footer-cta p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 20px;
+}
+
+.footer-contacts a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contacts a:hover {
+    color: #ff4d30;
+    text-decoration: underline;
+}
+
+.footer-copy {
+    margin-top: 64px;
+    font-size: 14px;
+    color: #888;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== Планшет ===== */
+@media (max-width: 1100px) {
+    .about-content {
+        flex-direction: column;
+    }
+    .about-text {
+        width: 100%;
+    }
+    .projects-grid,
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .materials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero-inner-mainText {
+        width: 100%;
+        font-size: 56px;
+    }
+}
+
+/* ===== Мобильные ===== */
+@media (max-width: 500px) {
+    .section {
+        margin-top: 64px;
+    }
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+    .about-text {
+        font-size: 16px;
+    }
+    .about-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about-stat-number {
+        font-size: 40px;
+    }
+    .projects-grid,
+    .materials-grid,
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .footer {
+        padding: 48px 0 16px;
+    }
+    .footer-inner {
+        flex-direction: column;
+    }
+    .footer-cta h2 {
+        font-size: 26px;
+    }
+    .footer-contacts {
+        font-size: 16px;
+    }
+}
+
+/* ===== Заказать проект ===== */
+.order-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 64px;
+    background: #f5f5f5;
+}
+
+.order-info {
+    width: 500px;
+}
+
+.order-info .section-title {
+    margin-bottom: 24px;
+}
+
+.order-text {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.order-form {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.order-field input,
+.order-field select,
+.order-field textarea {
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background: #fff;
+    resize: vertical;
+}
+
+.order-field input:focus,
+.order-field select:focus,
+.order-field textarea:focus {
+    outline: none;
+    border-color: #ff4d30;
+}
+
+.order-button {
+    padding: 16px;
+    font-size: 18px;
+    color: #595959;
+    background: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.order-button:hover {
+    background: #e0391e;
+}
+
+.order-success {
+    font-size: 16px;
+    color: #2a8a3e;
+}
+
+@media (max-width: 1100px) {
+    .order-inner {
+        flex-direction: column;
+        padding: 40px 32px;
+    }
+    .order-info,
+    .order-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .order-inner {
+        padding: 24px 16px;
+        gap: 24px;
+    }
+    .order-text {
+        font-size: 16px;
+    }
+}
